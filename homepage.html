@@ -31,6 +31,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="registerlogin.html">Log Out</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -63,15 +66,44 @@
                   </div>
                   <div class="row">
                     <div class="col-sm-12" id="make">
-                        <h2>Call An Ambulance</h2>
-                        <a class="btn btn-primary" href="#display4" onclick="show4()" id="button" role="button">Call An Ambulance</a>
+                        <h2>Personal Informations</h2>
+                        <a class="btn btn-primary" href="#display4" onclick="show4()" id="button" role="button">Personal Informations</a>
                       </div>
                   </div>
               </div>
               <div class="col-sm-7" id="show">
                 <div class="row">
                     <div class="col-sm-12" id="display1">
-                        <h2>Make an appointment</h2>
+                        <form action="">
+                            <h2>Make an appointment</h2>
+                            <h3>Specialties:</h3>
+                            <select name="specialties" id="specialties">
+                                <option value="neurology">neurology</option>
+                                <option value="pediatric">pediatric</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Dermatology">Dermatology</option>
+                                <option value="Oncology">Oncology</option>
+                            </select>
+                            <h3>Doctors:</h3>
+                            <select name="doctors" id="doctors">
+                                <option value="neurology">neurology</option>
+                                <option value="pediatric">pediatric</option>
+                                <option value="neurology">neurology</option>
+                                <option value="neurology">neurology</option>
+                                <option value="neurology">neurology</option>
+                            </select>
+                            <h3>Date:</h3>
+                            <input type="date" id="birthday" name="birthday">
+                            <h3>Hour:</h3>
+                            <select name="hours" id="hours">
+                                <option value="10">10.00</option>
+                                <option value="10.15">10.15</option>
+                                <option value="10.30">10.30</option>
+                                <option value="11">11.00</option>
+                                <option value="11.15">11.30</option>
+                            </select><br>
+                            <input type="submit" value="Make the appointment">
+                        </form>
                     </div>
                     <div class="col-sm-12" id="display2">
                         <h2>Cancel The Appointment</h2>
@@ -80,7 +112,12 @@
                         <h2>Appointment History</h2>
                     </div>
                     <div class="col-sm-12" id="display4">
-                        <h2>Call An Ambulance</h2>
+                        <h2>Personal Informations</h2>
+                        <h3>Your Name:</h3><h4></h4>
+                        <h3>Your surname:</h3><h4></h4>
+                        <h3>Gender:</h3><h4></h4>
+                        <h3>Phone Number:</h3><h4></h4>
+                        <h3>Email:</h3><h4></h4>
                     </div>
                 </div>
               </div>
